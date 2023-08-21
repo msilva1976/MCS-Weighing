@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<TitledPane animated="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="251.0" text="Login" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/20.0.1">
+<TitledPane animated="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="251.0" text="Login" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LoginController">
   <content>
     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="315.0" prefWidth="249.0">
          <children>
@@ -19,10 +19,10 @@
                   <Font name="System Bold Italic" size="23.0" />
                </font>
             </Label>
-            <Label fx:id="txtUser" layoutX="22.0" layoutY="73.0" text="Usuario" />
-            <Label fx:id="txtpassword" layoutX="22.0" layoutY="152.0" text="Password" />
-            <PasswordField layoutX="19.0" layoutY="168.0" />
-            <TextField layoutX="19.0" layoutY="89.0" />
+            <Label layoutX="22.0" layoutY="73.0" text="Usuario" />
+            <Label layoutX="22.0" layoutY="152.0" text="Password" />
+            <PasswordField fx:id="txtPassword" layoutX="19.0" layoutY="168.0" promptText="password" />
+            <TextField fx:id="txtUser" layoutX="19.0" layoutY="89.0" promptText="Usuario" />
          </children></AnchorPane>
   </content>
 </TitledPane>

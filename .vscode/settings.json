@@ -1,0 +1,14 @@
+{
+  "java.project.referencedLibraries": [
+    "lib/**/*.jar",
+    "/home/msilva/java/javafx.base.jar",
+    "/home/msilva/java/javafx.controls.jar",
+    "/home/msilva/java/javafx.fxml.jar",
+    "/home/msilva/java/javafx.graphics.jar",
+    "/home/msilva/java/javafx.media.jar",
+    "/home/msilva/java/javafx.swing.jar",
+    "/home/msilva/java/javafx.web.jar",
+    "/home/msilva/java/javafx-swt.jar",
+    "/home/msilva/Downloads/mysql-connector-j-8.0.33/mysql-connector-j-8.0.33.jar"
+  ]
+}
