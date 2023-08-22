@@ -16,16 +16,13 @@ public class Pessoa {
     this.nome = nome;
     this.senha = senha;
   }
- 
- 
-  public Pessoa(long id) {
+    public Pessoa() {
    
   }
-  public long getId() {
-    return id;
-  }
-  public void setId(long id) {
-    this.id = id;
+ 
+ 
+  
+  public Pessoa(long i) {
   }
   public String getUser() {
     return user;
@@ -44,6 +41,18 @@ public class Pessoa {
   }
   public void setSenha(String senha) {
     this.senha = senha;
+  }
+  public long getId() {
+    return id;
+  }
+  public void setId(long id) {
+    this.id = id;
+  }
+  public void mostraPessoa(){
+    System.out.println("   ID: "+ getId());
+    System.out.println(" User: "+getUser());
+    System.out.println(" Nome: "+getNome());
+    System.out.println("Senha: "+getSenha());
   }
   
 
