@@ -41,12 +41,13 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.PrincipalController">
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
   <children>
     <MenuBar VBox.vgrow="NEVER">
       <menus>
         <Menu mnemonicParsing="false" text="File">
           <items>
+                  <MenuItem fx:id="menuUsuarios" mnemonicParsing="false" text="Usuarios" />
             <MenuItem fx:id="menuCarretas" mnemonicParsing="false" text="Carretas" />
                   <MenuItem fx:id="menuCavalos" mnemonicParsing="false" text="Cavalos" />
             <MenuItem fx:id="menuBobs" mnemonicParsing="false" text="Bobs" />

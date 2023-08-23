@@ -6,10 +6,43 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Usuarios",
+      "request": "launch",
+      "mainClass": "App.Usuarios",
+      "projectName": "MCS-Weighing_33f97c4c",
+      "vmArgs": "--module-path /home/msilva/openjfx-17.0.8_linux-x64_bin-sdk/javafx-sdk-17.0.8/lib --add-modules javafx.controls,javafx.fxml"
+    },
+    {
+      "type": "java",
+      "name": "User",
+      "request": "launch",
+      "mainClass": "App.User",
+      "projectName": "MCS-Weighing_33f97c4c",
+      "vmArgs": "--module-path /home/msilva/openjfx-17.0.8_linux-x64_bin-sdk/javafx-sdk-17.0.8/lib --add-modules javafx.controls,javafx.fxml"
+    },
+    {
+      "type": "java",
+      "name": "Carretas",
+      "request": "launch",
+      "mainClass": "App.Carretas",
+      "projectName": "MCS-Weighing_33f97c4c",
+      "vmArgs": "--module-path /home/msilva/openjfx-17.0.8_linux-x64_bin-sdk/javafx-sdk-17.0.8/lib --add-modules javafx.controls,javafx.fxml"
+    },
+    {
+      "type": "java",
+      "name": "Bobs",
+      "request": "launch",
+      "mainClass": "App.Bobs",
+      "projectName": "MCS-Weighing_33f97c4c",
+      "vmArgs": "--module-path /home/msilva/openjfx-17.0.8_linux-x64_bin-sdk/javafx-sdk-17.0.8/lib --add-modules javafx.controls,javafx.fxml"
+    },
+    {
+      "type": "java",
       "name": "Cavalo",
       "request": "launch",
       "mainClass": "App.Cavalo",
-      "projectName": "MCS-Weighing_33f97c4c"
+      "projectName": "MCS-Weighing_33f97c4c",
+      "vmArgs": "--module-path /home/msilva/openjfx-17.0.8_linux-x64_bin-sdk/javafx-sdk-17.0.8/lib --add-modules javafx.controls,javafx.fxml"
     },
     {
       "type": "java",

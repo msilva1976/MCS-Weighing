@@ -6,7 +6,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-public class User extends Application{
+public class Usuarios extends Application{
   private static Stage stage;
 
   public static void main(String[] args) {
@@ -14,22 +14,22 @@ public class User extends Application{
   }
 
   @Override
-  public void start(Stage fridayStage) throws Exception {
-    Parent root = FXMLLoader.load(getClass().getResource("/View/user.fxml"));
+  public void start(Stage fridaysStage) throws Exception {
+    Parent root = FXMLLoader.load(getClass().getResource("/View/usuarios.fxml"));
     Scene scene = new Scene(root);
-    fridayStage.setTitle("User");
-    fridayStage.setScene(scene);
-    fridayStage.show();
-    setStage(fridayStage);
-    
-  }
+    fridaysStage.setTitle("Usuarios");
+    fridaysStage.setScene(scene);
+    fridaysStage.show();
+    setStage(fridaysStage);
+    }
 
   public static Stage getStage() {
     return stage;
   }
 
   public static void setStage(Stage stage) {
-    User.stage = stage;
+    Usuarios.stage = stage;
   }
+    
   
 }
