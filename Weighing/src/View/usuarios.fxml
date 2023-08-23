@@ -16,15 +16,17 @@
       <TextField fx:id="txtBuscar" layoutX="33.0" layoutY="107.0" />
       <TextField fx:id="txtUser" layoutX="34.0" layoutY="167.0" prefHeight="24.0" prefWidth="92.0" />
       <TextField fx:id="txtNome" layoutX="135.0" layoutY="167.0" prefHeight="24.0" prefWidth="323.0" />
-      <TextField fx:id="txtSenha" layoutX="468.0" layoutY="167.0" prefHeight="24.0" prefWidth="112.0" />
+      <TextField fx:id="txtSenha" layoutX="469.0" layoutY="107.0" prefHeight="24.0" prefWidth="112.0" promptText="Senha" />
+      <TextField fx:id="txtConfirma" layoutX="469.0" layoutY="167.0" prefHeight="24.0" prefWidth="112.0" promptText="Confirmação" />
       <Label layoutX="34.0" layoutY="81.0" text="BUSCAR" />
       <Label layoutX="34.0" layoutY="144.0" text="USER" />
       <Label layoutX="137.0" layoutY="144.0" text="NOME" />
-      <Label layoutX="470.0" layoutY="144.0" text="SENHA" />
+      <Label layoutX="470.0" layoutY="87.0" text="SENHA" />
       <Button fx:id="btncadas" layoutX="193.0" layoutY="236.0" mnemonicParsing="false" prefWidth="92.0" text="CADASTRO" />
       <Button fx:id="btbEditar" layoutX="294.0" layoutY="236.0" mnemonicParsing="false" prefWidth="92.0" text="EDITAR" />
       <Button fx:id="btnDeleta" layoutX="395.0" layoutY="236.0" mnemonicParsing="false" prefWidth="92.0" text="DELETA" />
       <Button fx:id="btnCancela" layoutX="497.0" layoutY="236.0" mnemonicParsing="false" prefWidth="92.0" text="CANCELA" />
       <Button fx:id="btbBuscar" layoutX="223.0" layoutY="107.0" mnemonicParsing="false" prefWidth="92.0" text="BUSCAR" />
+      <Label layoutX="472.0" layoutY="144.0" text="Confirmação" />
    </children>
 </Pane>

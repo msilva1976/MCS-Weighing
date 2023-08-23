@@ -4,127 +4,7 @@
   // Para obter mais informações, acesse: https://go.microsoft.com/fwlink/?linkid=830387
   "version": "0.2.0",
   "configurations": [
-    {
-      "type": "java",
-      "name": "Principal",
-      "request": "launch",
-      "mainClass": "App.Principal",
-      "projectName": "MCS-Weighing_87de744c",
-      "vmArgs": "--module-path /home/msilva/openjfx-17.0.8_linux-x64_bin-sdk/javafx-sdk-17.0.8/lib --add-modules javafx.controls,javafx.fxml"
-    },
-    {
-      "type": "java",
-      "name": "Cavalo",
-      "request": "launch",
-      "mainClass": "App.Cavalo",
-      "projectName": "MCS-Weighing_87de744c",
-      "vmArgs": "--module-path /home/msilva/openjfx-17.0.8_linux-x64_bin-sdk/javafx-sdk-17.0.8/lib --add-modules javafx.controls,javafx.fxml"
-    },
-    {
-      "type": "java",
-      "name": "Usuarios",
-      "request": "launch",
-      "mainClass": "App.Usuarios",
-      "projectName": "MCS-Weighing_87de744c",
-      "vmArgs": "--module-path /home/msilva/openjfx-17.0.8_linux-x64_bin-sdk/javafx-sdk-17.0.8/lib --add-modules javafx.controls,javafx.fxml"
-    },
-    {
-      "type": "java",
-      "name": "Carretas",
-      "request": "launch",
-      "mainClass": "App.Carretas",
-      "projectName": "MCS-Weighing_87de744c",
-      "vmArgs": "--module-path /home/msilva/openjfx-17.0.8_linux-x64_bin-sdk/javafx-sdk-17.0.8/lib --add-modules javafx.controls,javafx.fxml"
-    },
-    {
-      "type": "java",
-      "name": "Bobs",
-      "request": "launch",
-      "mainClass": "App.Bobs",
-      "projectName": "MCS-Weighing_87de744c",
-      "vmArgs": "--module-path /home/msilva/openjfx-17.0.8_linux-x64_bin-sdk/javafx-sdk-17.0.8/lib --add-modules javafx.controls,javafx.fxml"
-    },
-    {
-      "type": "java",
-      "name": "Usuarios",
-      "request": "launch",
-      "mainClass": "App.Usuarios",
-      "projectName": "MCS-Weighing_33f97c4c",
-      "vmArgs": "--module-path /home/msilva/openjfx-17.0.8_linux-x64_bin-sdk/javafx-sdk-17.0.8/lib --add-modules javafx.controls,javafx.fxml"
-    },
-    {
-      "type": "java",
-      "name": "User",
-      "request": "launch",
-      "mainClass": "App.User",
-      "projectName": "MCS-Weighing_33f97c4c",
-      "vmArgs": "--module-path /home/msilva/openjfx-17.0.8_linux-x64_bin-sdk/javafx-sdk-17.0.8/lib --add-modules javafx.controls,javafx.fxml"
-    },
-    {
-      "type": "java",
-      "name": "Carretas",
-      "request": "launch",
-      "mainClass": "App.Carretas",
-      "projectName": "MCS-Weighing_33f97c4c",
-      "vmArgs": "--module-path /home/msilva/openjfx-17.0.8_linux-x64_bin-sdk/javafx-sdk-17.0.8/lib --add-modules javafx.controls,javafx.fxml"
-    },
-    {
-      "type": "java",
-      "name": "Bobs",
-      "request": "launch",
-      "mainClass": "App.Bobs",
-      "projectName": "MCS-Weighing_33f97c4c",
-      "vmArgs": "--module-path /home/msilva/openjfx-17.0.8_linux-x64_bin-sdk/javafx-sdk-17.0.8/lib --add-modules javafx.controls,javafx.fxml"
-    },
-    {
-      "type": "java",
-      "name": "Cavalo",
-      "request": "launch",
-      "mainClass": "App.Cavalo",
-      "projectName": "MCS-Weighing_33f97c4c",
-      "vmArgs": "--module-path /home/msilva/openjfx-17.0.8_linux-x64_bin-sdk/javafx-sdk-17.0.8/lib --add-modules javafx.controls,javafx.fxml"
-    },
-    {
-      "type": "java",
-      "name": "Principal",
-      "request": "launch",
-      "mainClass": "App.Principal",
-      "projectName": "MCS-Weighing_33f97c4c",
-      "vmArgs": "--module-path /home/msilva/openjfx-17.0.8_linux-x64_bin-sdk/javafx-sdk-17.0.8/lib --add-modules javafx.controls,javafx.fxml"
-    },
-    {
-      "type": "java",
-      "name": "Principal",
-      "request": "launch",
-      "mainClass": "App.Princioal",
-      "projectName": "MCS-Weighing_33f97c4c",
-      "vmArgs": "--module-path /home/msilva/openjfx-17.0.8_linux-x64_bin-sdk/javafx-sdk-17.0.8/lib --add-modules javafx.controls,javafx.fxml"
-    },
-    {
-      "type": "java",
-      "name": "test",
-      "request": "launch",
-      "mainClass": "App.test",
-      "projectName": "MCS-Weighing_33f97c4c"
-    },
-    {
-      "type": "java",
-      "name": "Login",
-      "request": "launch",
-      "mainClass": "App.Login",
-      "projectName": "MCS-Weighing_33f97c4c",
-      "vmArgs": "--module-path /home/msilva/openjfx-17.0.8_linux-x64_bin-sdk/javafx-sdk-17.0.8/lib --add-modules javafx.controls,javafx.fxml"
-    },
-    {
-      "type": "java",
-      "name": "test",
-      "request": "launch",
-      "mainClass": "App.test",
-      "projectName": "MCS-Weighing_87de744c",
-      "jdkPath": "${env:JAVA_HOME}/bin",
-      "cwd": "${fileDirname}",
-      "startupClass": "${fileBasenameNoExtension}"
-    },
+    
     {
       "name": "Java",
       "type": "java",
@@ -160,10 +40,39 @@
       "jdkPath": "${env:JAVA_HOME}/bin",
       "cwd": "${fileDirname}",
       "startupClass": "${fileBasenameNoExtension}",
-      "classpath": [
-        ".",
-        "${fileDirname}"
-      ]
+    },
+    {
+      "type": "java",
+      "name": "Bobs",
+      "request": "launch",
+      "mainClass": "App.Bobs",
+      "projectName": "MCS-Weighing_87de744c",
+      "vmArgs": "--module-path /home/msilva/openjfx-20.0.2_linux-x64_bin-sdk/javafx-sdk-20.0.2/lib --add-modules javafx.controls,javafx.fxml",
+      "jdkPath": "${env:JAVA_HOME}/bin",
+      "cwd": "${fileDirname}",
+      "startupClass": "${fileBasenameNoExtension}",
+    },
+    {
+      "type": "java",
+      "name": "Carretas",
+      "request": "launch",
+      "mainClass": "App.Carretas",
+      "projectName": "MCS-Weighing_87de744c",
+      "vmArgs": "--module-path /home/msilva/openjfx-20.0.2_linux-x64_bin-sdk/javafx-sdk-20.0.2/lib --add-modules javafx.controls,javafx.fxml",
+      "jdkPath": "${env:JAVA_HOME}/bin",
+      "cwd": "${fileDirname}",
+      "startupClass": "${fileBasenameNoExtension}",
+    },
+    {
+      "type": "java",
+      "name": "Cavalo",
+      "request": "launch",
+      "mainClass": "App.Cavalo",
+      "projectName": "MCS-Weighing_87de744c",
+      "vmArgs": "--module-path /home/msilva/openjfx-20.0.2_linux-x64_bin-sdk/javafx-sdk-20.0.2/lib --add-modules javafx.controls,javafx.fxml",
+      "jdkPath": "${env:JAVA_HOME}/bin",
+      "cwd": "${fileDirname}",
+      "startupClass": "${fileBasenameNoExtension}",
     },
     {
       "type": "java",
@@ -171,14 +80,43 @@
       "request": "launch",
       "mainClass": "App.Login",
       "projectName": "MCS-Weighing_87de744c",
-      "vmArgs": "--module-path /home/msilva/openjfx-17.0.8_linux-x64_bin-sdk/javafx-sdk-17.0.8/lib --add-modules javafx.controls,javafx.fxml",
+      "vmArgs": "--module-path /home/msilva/openjfx-20.0.2_linux-x64_bin-sdk/javafx-sdk-20.0.2/lib --add-modules javafx.controls,javafx.fxml",
       "jdkPath": "${env:JAVA_HOME}/bin",
       "cwd": "${fileDirname}",
       "startupClass": "${fileBasenameNoExtension}",
-      "classpath": [
-        ".",
-        "${fileDirname}"
-      ]
+    },
+    {
+      "type": "java",
+      "name": "Principal",
+      "request": "launch",
+      "mainClass": "App.Principal",
+      "projectName": "MCS-Weighing_87de744c",
+      "vmArgs": "--module-path /home/msilva/openjfx-20.0.2_linux-x64_bin-sdk/javafx-sdk-20.0.2/lib --add-modules javafx.controls,javafx.fxml",
+      "jdkPath": "${env:JAVA_HOME}/bin",
+      "cwd": "${fileDirname}",
+      "startupClass": "${fileBasenameNoExtension}",
+    },
+    {
+      "type": "java",
+      "name": "Usuarios",
+      "request": "launch",
+      "mainClass": "App.Usuarios",
+      "projectName": "MCS-Weighing_87de744c",
+      "vmArgs": "--module-path /home/msilva/openjfx-20.0.2_linux-x64_bin-sdk/javafx-sdk-20.0.2/lib --add-modules javafx.controls,javafx.fxml",
+      "jdkPath": "${env:JAVA_HOME}/bin",
+      "cwd": "${fileDirname}",
+      "startupClass": "${fileBasenameNoExtension}",
+    },
+    {
+      "type": "java",
+      "name": "test",
+      "request": "launch",
+      "mainClass": "App.test",
+      "projectName": "MCS-Weighing_87de744c",
+      "vmArgs": "--module-path /home/msilva/openjfx-20.0.2_linux-x64_bin-sdk/javafx-sdk-20.0.2/lib --add-modules javafx.controls,javafx.fxml",
+      "jdkPath": "${env:JAVA_HOME}/bin",
+      "cwd": "${fileDirname}",
+      "startupClass": "${fileBasenameNoExtension}",
     }
   ]
 }

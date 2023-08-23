@@ -8,6 +8,7 @@ import javafx.stage.Stage;
 
 public class Login extends Application {
   private static Stage stage;
+
   public static void main(String[] args) {
     launch(args);
   }
@@ -15,12 +16,12 @@ public class Login extends Application {
   @Override
   public void start(Stage pimaryStage) throws Exception {
     Parent root = FXMLLoader.load(getClass().getResource("/View/login.fxml"));
-    Scene scene =  new Scene(root);
+    Scene scene = new Scene(root);
     pimaryStage.setTitle("Login");
     pimaryStage.setScene(scene);
     pimaryStage.show();
     setStage(pimaryStage);
-    
+
   }
 
   public static Stage getStage() {
@@ -30,5 +31,5 @@ public class Login extends Application {
   public static void setStage(Stage stage) {
     Login.stage = stage;
   }
-  
+
 }

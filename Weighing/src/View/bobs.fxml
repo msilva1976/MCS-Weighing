@@ -6,10 +6,9 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="312.0" prefWidth="546.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="312.0" prefWidth="546.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.BobsController">
    <children>
-      <Label layoutX="33.0" layoutY="40.0" text="Cadastro de Cavalos">
+      <Label layoutX="33.0" layoutY="40.0" text="BobTail">
          <font>
             <Font size="26.0" />
          </font>
@@ -17,12 +16,12 @@
       <Label layoutX="33.0" layoutY="97.0" text="Frota" />
       <Label layoutX="165.0" layoutY="97.0" text="Placa Bobs" />
       <Label layoutX="332.0" layoutY="97.0" text="Tara" />
-      <TextField layoutX="33.0" layoutY="116.0" prefHeight="24.0" prefWidth="112.0" />
-      <TextField layoutX="329.0" layoutY="116.0" />
-      <TextField layoutX="161.0" layoutY="116.0" prefHeight="24.0" prefWidth="153.0" />
+      <TextField fx:id="txtFrota" layoutX="33.0" layoutY="116.0" prefHeight="24.0" prefWidth="112.0" />
+      <TextField fx:id="txtPlaca" layoutX="161.0" layoutY="116.0" prefHeight="24.0" prefWidth="153.0" />
+      <TextField fx:id="txtTara" layoutX="329.0" layoutY="116.0" />
       <Label layoutX="33.0" layoutY="152.0" text="Motorista" />
-      <TextField layoutX="34.0" layoutY="172.0" prefHeight="24.0" prefWidth="465.0" />
-      <Button layoutX="283.0" layoutY="236.0" mnemonicParsing="false" prefWidth="101.0" text="Salvar" />
-      <Button layoutX="397.0" layoutY="236.0" mnemonicParsing="false" prefWidth="101.0" text="Cancela" />
+      <TextField fx:id="txtMotorista" layoutX="34.0" layoutY="172.0" prefHeight="24.0" prefWidth="465.0" />
+      <Button fx:id="btnCadastra" layoutX="283.0" layoutY="236.0" mnemonicParsing="false" prefWidth="101.0" text="Cadastrar" />
+      <Button fx:id="btnCancela" layoutX="397.0" layoutY="236.0" mnemonicParsing="false" prefWidth="101.0" text="Cancela" />
    </children>
 </Pane>

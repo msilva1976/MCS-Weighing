@@ -6,10 +6,9 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="359.0" prefWidth="546.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<Pane fx:id="txtPlaca" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="359.0" prefWidth="546.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.CarretasController">
    <children>
-      <Label layoutX="33.0" layoutY="40.0" text="Cadastro de Carretas">
+      <Label layoutX="33.0" layoutY="40.0" text="Carretas">
          <font>
             <Font size="26.0" />
          </font>
@@ -17,18 +16,18 @@
       <Label layoutX="33.0" layoutY="97.0" text="Frota" />
       <Label layoutX="165.0" layoutY="97.0" text="Placa Carreta" />
       <Label layoutX="332.0" layoutY="97.0" text="Placa Cavalo" />
-      <TextField layoutX="33.0" layoutY="116.0" prefHeight="24.0" prefWidth="112.0" />
-      <TextField layoutX="329.0" layoutY="116.0" />
-      <TextField layoutX="161.0" layoutY="116.0" prefHeight="24.0" prefWidth="153.0" />
       <Label layoutX="33.0" layoutY="152.0" text="Motorista" />
       <Label layoutX="428.0" layoutY="152.0" text="Exos" />
-      <TextField layoutX="34.0" layoutY="172.0" prefHeight="24.0" prefWidth="379.0" />
-      <TextField layoutX="427.0" layoutY="171.0" prefHeight="24.0" prefWidth="70.0" />
+      <Button fx:id="btnCadastrar" layoutX="283.0" layoutY="307.0" mnemonicParsing="false" prefWidth="101.0" text="Cadastrar" />
+      <Button fx:id="btnCancela" layoutX="397.0" layoutY="307.0" mnemonicParsing="false" prefWidth="101.0" text="Cancela" />
       <Label layoutX="33.0" layoutY="217.0" text="Destino" />
       <Label layoutX="373.0" layoutY="217.0" text="Capacidade" />
-      <TextField layoutX="32.0" layoutY="239.0" prefHeight="24.0" prefWidth="331.0" />
-      <TextField layoutX="373.0" layoutY="239.0" prefHeight="24.0" prefWidth="123.0" />
-      <Button layoutX="283.0" layoutY="307.0" mnemonicParsing="false" prefWidth="101.0" text="Salvar" />
-      <Button layoutX="397.0" layoutY="307.0" mnemonicParsing="false" prefWidth="101.0" text="Cancela" />
+      <TextField fx:id="txtPlava" layoutX="33.0" layoutY="120.0" prefHeight="24.0" prefWidth="121.0" />
+      <TextField fx:id="txtPlacaCarreta" layoutX="162.0" layoutY="120.0" prefHeight="24.0" prefWidth="163.0" />
+      <TextField fx:id="txttxtPlaCavalo" layoutX="334.0" layoutY="120.0" />
+      <TextField fx:id="txtMotorista" layoutX="33.0" layoutY="180.0" prefHeight="24.0" prefWidth="382.0" />
+      <TextField fx:id="txtEixo" layoutX="428.0" layoutY="180.0" prefHeight="24.0" prefWidth="76.0" />
+      <TextField fx:id="txtDestino" layoutX="33.0" layoutY="239.0" prefHeight="24.0" prefWidth="328.0" />
+      <TextField fx:id="txtCapacidade" layoutX="374.0" layoutY="239.0" prefHeight="24.0" prefWidth="129.0" />
    </children>
 </Pane>
