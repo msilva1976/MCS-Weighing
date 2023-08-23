@@ -12,8 +12,6 @@
   <content>
     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="315.0" prefWidth="249.0">
          <children>
-            <Button fx:id="btnEnter" layoutX="19.0" layoutY="226.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="72.0" text="Enter" />
-            <Button fx:id="btnCancel" layoutX="128.0" layoutY="226.0" mnemonicParsing="false" text="Cancela" />
             <Label layoutX="24.0" layoutY="28.0" text="Login">
                <font>
                   <Font name="System Bold Italic" size="23.0" />
@@ -21,8 +19,10 @@
             </Label>
             <Label layoutX="22.0" layoutY="73.0" text="Usuario" />
             <Label layoutX="22.0" layoutY="152.0" text="Password" />
-            <PasswordField fx:id="txtPassword" layoutX="19.0" layoutY="168.0" promptText="password" />
             <TextField fx:id="txtUser" layoutX="19.0" layoutY="89.0" promptText="Usuario" />
+            <PasswordField fx:id="txtPassword" layoutX="19.0" layoutY="168.0" promptText="password" />
+            <Button fx:id="btnEnter" layoutX="19.0" layoutY="226.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="72.0" text="Enter" />
+            <Button fx:id="btnCancel" layoutX="128.0" layoutY="226.0" mnemonicParsing="false" text="Cancela" />
          </children></AnchorPane>
   </content>
 </TitledPane>
