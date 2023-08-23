@@ -6,13 +6,51 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Cavalo",
+      "request": "launch",
+      "mainClass": "App.Cavalo",
+      "projectName": "MCS-Weighing_33f97c4c"
+    },
+    {
+      "type": "java",
+      "name": "Principal",
+      "request": "launch",
+      "mainClass": "App.Principal",
+      "projectName": "MCS-Weighing_33f97c4c",
+      "vmArgs": "--module-path /home/msilva/openjfx-17.0.8_linux-x64_bin-sdk/javafx-sdk-17.0.8/lib --add-modules javafx.controls,javafx.fxml"
+    },
+    {
+      "type": "java",
+      "name": "Principal",
+      "request": "launch",
+      "mainClass": "App.Princioal",
+      "projectName": "MCS-Weighing_33f97c4c",
+      "vmArgs": "--module-path /home/msilva/openjfx-17.0.8_linux-x64_bin-sdk/javafx-sdk-17.0.8/lib --add-modules javafx.controls,javafx.fxml"
+    },
+    {
+      "type": "java",
+      "name": "test",
+      "request": "launch",
+      "mainClass": "App.test",
+      "projectName": "MCS-Weighing_33f97c4c"
+    },
+    {
+      "type": "java",
+      "name": "Login",
+      "request": "launch",
+      "mainClass": "App.Login",
+      "projectName": "MCS-Weighing_33f97c4c",
+      "vmArgs": "--module-path /home/msilva/openjfx-17.0.8_linux-x64_bin-sdk/javafx-sdk-17.0.8/lib --add-modules javafx.controls,javafx.fxml"
+    },
+    {
+      "type": "java",
       "name": "test",
       "request": "launch",
       "mainClass": "App.test",
       "projectName": "MCS-Weighing_87de744c",
       "jdkPath": "${env:JAVA_HOME}/bin",
       "cwd": "${fileDirname}",
-      "startupClass": "${fileBasenameNoExtension}",
+      "startupClass": "${fileBasenameNoExtension}"
     },
     {
       "name": "Java",
