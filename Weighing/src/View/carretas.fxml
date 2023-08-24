@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.Pane?>
@@ -18,16 +19,23 @@
       <Label layoutX="332.0" layoutY="97.0" text="Placa Cavalo" />
       <Label layoutX="33.0" layoutY="152.0" text="Motorista" />
       <Label layoutX="428.0" layoutY="152.0" text="Exos" />
-      <Button fx:id="btnCadastrar" layoutX="283.0" layoutY="307.0" mnemonicParsing="false" prefWidth="101.0" text="Cadastrar" />
-      <Button fx:id="btnCancela" layoutX="397.0" layoutY="307.0" mnemonicParsing="false" prefWidth="101.0" text="Cancela" />
       <Label layoutX="33.0" layoutY="217.0" text="Destino" />
       <Label layoutX="373.0" layoutY="217.0" text="Capacidade" />
-      <TextField fx:id="txtPlava" layoutX="33.0" layoutY="120.0" prefHeight="24.0" prefWidth="121.0" />
-      <TextField fx:id="txtPlacaCarreta" layoutX="162.0" layoutY="120.0" prefHeight="24.0" prefWidth="163.0" />
-      <TextField fx:id="txttxtPlaCavalo" layoutX="334.0" layoutY="120.0" />
-      <TextField fx:id="txtMotorista" layoutX="33.0" layoutY="180.0" prefHeight="24.0" prefWidth="382.0" />
-      <TextField fx:id="txtEixo" layoutX="428.0" layoutY="180.0" prefHeight="24.0" prefWidth="76.0" />
-      <TextField fx:id="txtDestino" layoutX="33.0" layoutY="239.0" prefHeight="24.0" prefWidth="328.0" />
-      <TextField fx:id="txtCapacidade" layoutX="374.0" layoutY="239.0" prefHeight="24.0" prefWidth="129.0" />
+      <TextField fx:id="txtPlava" layoutX="33.0" layoutY="120.0" prefHeight="24.0" prefWidth="121.0" promptText="Frota" />
+      <TextField fx:id="txtPlacaCarreta" layoutX="162.0" layoutY="120.0" prefHeight="24.0" prefWidth="163.0" promptText="Placa Carreta" />
+      <TextField fx:id="txttxtPlaCavalo" layoutX="334.0" layoutY="120.0" promptText="Placa Cavalo" />
+      <TextField fx:id="txtMotorista" layoutX="33.0" layoutY="180.0" prefHeight="24.0" prefWidth="382.0" promptText="Motorista" />
+      <TextField fx:id="txtEixo" layoutX="428.0" layoutY="180.0" prefHeight="24.0" prefWidth="76.0" promptText="Eixos" />
+      <TextField fx:id="txtDestino" layoutX="33.0" layoutY="239.0" prefHeight="24.0" prefWidth="328.0" promptText="Destino" />
+      <TextField fx:id="txtCapacidade" layoutX="374.0" layoutY="239.0" prefHeight="24.0" prefWidth="129.0" promptText="Capacidade" />
+      <Button fx:id="btnBusca" layoutX="47.0" layoutY="282.0" mnemonicParsing="false" prefWidth="84.0" text="Busca" />
+      <Button fx:id="btnCadastrar" layoutX="140.0" layoutY="282.0" mnemonicParsing="false" prefWidth="84.0" text="Cadastrar" />
+      <Button fx:id="btbEdita" layoutX="232.0" layoutY="282.0" mnemonicParsing="false" prefWidth="84.0" text="Edita" />
+      <Button fx:id="btnDeleta" layoutX="324.0" layoutY="282.0" mnemonicParsing="false" prefWidth="84.0" text="Deleta" wrapText="true" />
+      <Button fx:id="btnCancela" layoutX="416.0" layoutY="282.0" mnemonicParsing="false" prefWidth="84.0" text="Cancela" />
+      <TextField layoutX="166.0" layoutY="44.0" prefHeight="24.0" prefWidth="163.0" promptText="Busca" />
+      <CheckBox fx:id="chcPlaca" layoutX="334.0" layoutY="47.0" mnemonicParsing="false" text="Placa" />
+      <CheckBox fx:id="chcFrota" layoutX="403.0" layoutY="47.0" mnemonicParsing="false" text="Frota" />
+      <Label layoutX="166.0" layoutY="14.0" text="Busca" />
    </children>
 </Pane>
