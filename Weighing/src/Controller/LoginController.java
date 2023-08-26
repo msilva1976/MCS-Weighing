@@ -1,10 +1,13 @@
 package Controller;
 
 import java.net.URL;
+import java.util.List;
 import java.util.ResourceBundle;
 
 import App.Login;
 import App.Principal;
+import DAO.PessoaDao;
+import Model.Pessoa;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Alert;
@@ -58,24 +61,35 @@ public class LoginController implements Initializable {
     }
 
     public void logar() {
-      
-      if (txtUser.getText().equals("msilva") && txpPassword.getText().equals("1234")) {
+      PessoaDao dao = new PessoaDao();
+      List<Pessoa> pessoas = dao.getList();
+
+      for (int x=0; x < pessoas.size() ; x++) {
+        if (txtUser.getText().equals(pessoas.get(x).getUser()) && txpPassword.getText().equals(pessoas.get(x).getSenha())) {
         
         Principal principal = new Principal();
+        x = pessoas.size();
         try {
           principal.start(new Stage());
+          fecha();
         } catch (Exception e1) {
 
           e1.printStackTrace();
         }
       } else {
-        Alert alert = new Alert(AlertType.ERROR);
+        if (x==pessoas.size()-1) {
+          Alert alert = new Alert(AlertType.ERROR);
         alert.setHeaderText("LOGIN INVALIDO");
         alert.setTitle("LOGIN");
         alert.setContentText("ACESSO NEGADO");
         alert.show();
+        }
+        
       }
-      fecha();
+      
     }
+      }
+      
+      
 
   }

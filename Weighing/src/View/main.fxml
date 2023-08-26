@@ -32,19 +32,21 @@
   OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 -->
 
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.ListView?>
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.SeparatorMenuItem?>
-<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
-<?import javafx.scene.text.Font?>
 
-<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.PrincipalController">
+<VBox prefHeight="909.0" prefWidth="1282.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.PrincipalController">
   <children>
     <MenuBar VBox.vgrow="NEVER">
       <menus>
@@ -65,17 +67,39 @@
         </Menu>
       </menus>
     </MenuBar>
-    <AnchorPane fx:id="main" maxHeight="-1.0" maxWidth="-1.0" prefHeight="499.0" prefWidth="948.0" VBox.vgrow="ALWAYS">
-      <children>
-        <Label alignment="CENTER" layoutX="155.0" layoutY="177.0" style="&#10;" text="Drag components from Library here…" textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
-          <font>
-            <Font size="18.0" />
-          </font>
-        </Label>
-            <ListView layoutX="417.0" layoutY="142.0" orientation="HORIZONTAL" prefHeight="200.0" prefWidth="200.0" />
-            <TextField layoutX="417.0" layoutY="103.0" prefHeight="24.0" prefWidth="200.0" />
-            <TextArea layoutX="14.0" layoutY="103.0" prefHeight="239.0" prefWidth="390.0" />
-      </children>
-    </AnchorPane>
+      <TabPane fx:id="tbtTaberlaUser" prefHeight="882.0" prefWidth="1282.0" side="BOTTOM">
+        <tabs>
+          <Tab fx:id="abaCarretas" text="CARRETAS">
+               <content>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" />
+               </content>
+          </Tab>
+            <Tab fx:id="abaBob" text="BOBTAILS">
+               <content>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" />
+               </content>
+            </Tab>
+            <Tab fx:id="abaUser" text="USUARIOS">
+               <content>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="tbwUser" layoutX="26.0" layoutY="14.0" prefHeight="646.0" prefWidth="940.0">
+                          <columns>
+                            <TableColumn fx:id="tbUseUser" prefWidth="195.0" text="USER" />
+                            <TableColumn fx:id="tbUserNome" prefWidth="613.0" text="NOME" />
+                              <TableColumn fx:id="tbUserSenha" prefWidth="131.0" text="SENHA" />
+                          </columns>
+                        </TableView>
+                        <Label layoutX="994.0" layoutY="24.0" text="BUSCA" />
+                        <TextField fx:id="txtBusca" layoutX="994.0" layoutY="53.0" prefHeight="24.0" prefWidth="225.0" promptText="BUSCA" />
+                        <Button fx:id="btnbusca" layoutX="1231.0" layoutY="53.0" mnemonicParsing="false" text="OK" />
+                        <Button fx:id="btnDeleta" layoutX="26.0" layoutY="691.0" mnemonicParsing="false" prefWidth="121.0" text="DELETA" />
+                        <Button fx:id="btnAtualiza" layoutX="167.0" layoutY="691.0" mnemonicParsing="false" prefWidth="121.0" text="ATUALIAZA" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
   </children>
 </VBox>

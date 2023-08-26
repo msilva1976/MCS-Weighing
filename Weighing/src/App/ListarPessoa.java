@@ -7,7 +7,7 @@ import Model.Pessoa;
 
 //SELECT * FROM mydb.pessoa;ALTER TABLE pessoa AUTO_INCREMENT = 1;
 
-public class test {
+public class ListarPessoa {
   // // INSERIR PESSOAS
   // public static void main(String[] args) {
   // Pessoa pessoa =  new Pessoa("mantonio", "Marcos Antonio", "1234");
