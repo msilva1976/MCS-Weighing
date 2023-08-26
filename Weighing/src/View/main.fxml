@@ -46,7 +46,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox prefHeight="909.0" prefWidth="1282.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.PrincipalController">
+<VBox prefHeight="809.0" prefWidth="1282.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.PrincipalController">
   <children>
     <MenuBar VBox.vgrow="NEVER">
       <menus>
@@ -83,7 +83,7 @@
                <content>
                   <AnchorPane prefHeight="200.0" prefWidth="200.0">
                      <children>
-                        <TableView fx:id="tbwUser" layoutX="26.0" layoutY="14.0" prefHeight="646.0" prefWidth="940.0">
+                        <TableView fx:id="tbwUser" layoutX="26.0" layoutY="14.0" prefHeight="480.0" prefWidth="940.0">
                           <columns>
                             <TableColumn fx:id="tbUseUser" prefWidth="195.0" text="USER" />
                             <TableColumn fx:id="tbUserNome" prefWidth="613.0" text="NOME" />
@@ -93,8 +93,8 @@
                         <Label layoutX="994.0" layoutY="24.0" text="BUSCA" />
                         <TextField fx:id="txtBusca" layoutX="994.0" layoutY="53.0" prefHeight="24.0" prefWidth="225.0" promptText="BUSCA" />
                         <Button fx:id="btnbusca" layoutX="1231.0" layoutY="53.0" mnemonicParsing="false" text="OK" />
-                        <Button fx:id="btnDeleta" layoutX="26.0" layoutY="691.0" mnemonicParsing="false" prefWidth="121.0" text="DELETA" />
-                        <Button fx:id="btnAtualiza" layoutX="167.0" layoutY="691.0" mnemonicParsing="false" prefWidth="121.0" text="ATUALIAZA" />
+                        <Button fx:id="btnDeleta" layoutX="26.0" layoutY="529.0" mnemonicParsing="false" prefWidth="121.0" text="DELETA" />
+                        <Button fx:id="btnAtualiza" layoutX="167.0" layoutY="529.0" mnemonicParsing="false" prefWidth="121.0" text="ATUALIAZA" />
                      </children>
                   </AnchorPane>
                </content>
