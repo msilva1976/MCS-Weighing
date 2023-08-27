@@ -11,7 +11,6 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
-import javafx.scene.control.CheckBox;
 import javafx.scene.control.TextField;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.input.KeyCode;
@@ -22,18 +21,14 @@ import javafx.stage.Stage;
 public class UsuariosController implements Initializable{
 
 
-    @FXML    private Button btbBuscar;
-    @FXML    private Button btbEditar;
-    @FXML    private Button btnCancela;
-    @FXML    private Button btnDeleta;
-    @FXML    private Button btncadas;
-    @FXML    private CheckBox chcNome;
-    @FXML    private CheckBox chcUser;
-    @FXML    private TextField txtBuscar;
-    @FXML    private TextField txtConfirma;
-    @FXML    private TextField txtNome;
-    @FXML    private TextField txtSenha;
-    @FXML    private TextField txtUser;
+  
+  @FXML  private Button btnCancela;
+  @FXML  private Button btncadas;
+  @FXML  private TextField txtConfirma;
+  @FXML  private TextField txtNome;
+  @FXML  private TextField txtSenha;
+  @FXML  private TextField txtUser;
+
 
   
 
@@ -52,15 +47,7 @@ public class UsuariosController implements Initializable{
     btncadas.setOnMouseClicked((MouseEvent)->{
       cadastroUser();
     });
-    btbEditar.setOnKeyPressed((KeyEvent e)->{
-      if (e.getCode() == KeyCode.ENTER) {
-        editaUser();
-      }
 
-    });
-    btbEditar.setOnMouseClicked((MouseEvent)->{
-      editaUser();
-    });
   }
 
   public void fechar() {
@@ -101,33 +88,33 @@ public class UsuariosController implements Initializable{
     fechar();
  
   }
-  private void editaUser(){
-    String user = txtUser.getText();
-    String nome = txtNome.getText();
-    String senha = txtSenha.getText();
-    String confirma = txtConfirma.getText();
-    if (senha.equals(confirma) == true) {
-       Pessoa pessoa =  new Pessoa(user,nome,senha);
-       PessoaDao dao = new PessoaDao();
-       if (dao.update(pessoa)) {
-         Alert alert = new Alert(AlertType.CONFIRMATION);
-         alert.setHeaderText("Usuario cadastrado.");
-         alert.showAndWait();
+  // private void editaUser(){
+  //   String user = txtUser.getText();
+  //   String nome = txtNome.getText();
+  //   String senha = txtSenha.getText();
+  //   String confirma = txtConfirma.getText();
+  //   if (senha.equals(confirma) == true) {
+  //      Pessoa pessoa =  new Pessoa(user,nome,senha);
+  //      PessoaDao dao = new PessoaDao();
+  //      if (dao.update(pessoa)) {
+  //        Alert alert = new Alert(AlertType.CONFIRMATION);
+  //        alert.setHeaderText("Usuario cadastrado.");
+  //        alert.showAndWait();
 
-       } else {
-         Alert alert = new Alert(AlertType.ERROR);
-         alert.setHeaderText("Usuario não cadastrado.");
-         alert.showAndWait();
-       }
+  //      } else {
+  //        Alert alert = new Alert(AlertType.ERROR);
+  //        alert.setHeaderText("Usuario não cadastrado.");
+  //        alert.showAndWait();
+  //      }
 
-    } else {
-      Alert alert = new Alert(AlertType.ERROR);
-      alert.setHeaderText("Senhas diferentes!");
-      alert.showAndWait();
-    }
-    fechar();
+  //   } else {
+  //     Alert alert = new Alert(AlertType.ERROR);
+  //     alert.setHeaderText("Senhas diferentes!");
+  //     alert.showAndWait();
+  //   }
+  //   fechar();
 
-  }
+  // }
 
 
 }

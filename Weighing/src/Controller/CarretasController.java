@@ -8,7 +8,7 @@ import App.Principal;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
-import javafx.scene.control.CheckBox;
+
 import javafx.scene.control.TextField;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
@@ -20,21 +20,18 @@ import javafx.stage.Stage;
 public class CarretasController implements Initializable {
     
   
-    @FXML    private Button btbEdita;
-    @FXML    private Button btnBusca;
-    @FXML    private Button btnCadastrar;
-    @FXML    private Button btnCancela;
-    @FXML    private Button btnDeleta;
-    @FXML    private CheckBox chcFrota;
-    @FXML    private CheckBox chcPlaca;
-    @FXML    private TextField txtCapacidade;
-    @FXML    private TextField txtDestino;
-    @FXML    private TextField txtEixo;
-    @FXML    private TextField txtMotorista;
-    @FXML    private Pane txtPlaca;
-    @FXML    private TextField txtPlacaCarreta;
-    @FXML    private TextField txtPlava;
-    @FXML    private TextField txttxtPlaCavalo;
+  @FXML
+  private Button btnCadastrar;
+
+  @FXML  private Button btnCancela;
+  @FXML  private TextField txtCapacidade;
+  @FXML  private TextField txtDestino;
+  @FXML  private TextField txtEixo;
+  @FXML  private TextField txtMotorista;
+  @FXML  private Pane txtPlaca;
+  @FXML  private TextField txtPlacaCarreta;
+  @FXML  private TextField txtPlava;
+  @FXML  private TextField txttxtPlaCavalo;
     @Override
     public void initialize(URL location, ResourceBundle resources) {
       btnCancela.setOnMouseClicked((MouseEvent e)->{
@@ -56,5 +53,6 @@ public class CarretasController implements Initializable {
       e.printStackTrace();
     }
     }
+
 
 }

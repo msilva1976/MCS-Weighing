@@ -54,7 +54,7 @@ public class PessoaDao {
     return false;
   }
   public boolean delete(Pessoa pessoa){
-    String sql = "DELETE FROM pessoa WHERE ID=?;";
+    String sql = "DELETE FROM pessoa WHERE id=?;";
 
     try {
       PreparedStatement stmt = conn.prepareStatement(sql);
@@ -96,33 +96,7 @@ public class PessoaDao {
     return pessoas;
     
   }
-  public List<Pessoa>getuser(){
-    List<Pessoa>buscaPessoa = new ArrayList<>();
-    String sql = "SELECT user, nome,senha FROM pessoa ";
-    try {
-      PreparedStatement stmt = conn.prepareStatement(sql);
-      ResultSet rs = stmt.executeQuery();
-      while(rs.next()){
-        Pessoa pessoa = new Pessoa();
-        pessoa.setId(rs.getLong("id"));
-        pessoa.setUser(rs.getString("user"));
-        pessoa.setNome(rs.getString("nome"));
-        pessoa.setSenha(rs.getString("senha"));
-        buscaPessoa.add(pessoa);
-        
-      }
-      stmt.close();
-      rs.close();
-      conn.close();
-    } catch (SQLException e) {
-      System.out.println("erro");
-     
-      return null;
-    }
-
-    return buscaPessoa;
-    
-  }
+  
 }
 
   

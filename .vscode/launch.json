@@ -4,7 +4,28 @@
   // Para obter mais informações, acesse: https://go.microsoft.com/fwlink/?linkid=830387
   "version": "0.2.0",
   "configurations": [
-    
+    {
+      "type": "java",
+      "name": "Bobs",
+      "request": "launch",
+      "mainClass": "App.Bobs",
+      "projectName": "MCS-Weighing_33f97c4c"
+    },
+    {
+      "type": "java",
+      "name": "Principal",
+      "request": "launch",
+      "mainClass": "App.Principal",
+      "projectName": "MCS-Weighing_33f97c4c"
+    },
+    {
+      "type": "java",
+      "name": "Login",
+      "request": "launch",
+      "mainClass": "App.Login",
+      "projectName": "MCS-Weighing_33f97c4c",
+      "vmArgs": "--module-path /home/msilva/openjfx-20.0.2_linux-x64_bin-sdk/javafx-sdk-20.0.2/lib --add-modules javafx.controls,javafx.fxml"
+    },
     {
       "name": "Java",
       "type": "java",
@@ -39,7 +60,7 @@
       "mainClass": "${file}",
       "jdkPath": "${env:JAVA_HOME}/bin",
       "cwd": "${fileDirname}",
-      "startupClass": "${fileBasenameNoExtension}",
+      "startupClass": "${fileBasenameNoExtension}"
     },
     {
       "type": "java",
@@ -50,7 +71,7 @@
       "vmArgs": "--module-path /home/msilva/openjfx-20.0.2_linux-x64_bin-sdk/javafx-sdk-20.0.2/lib --add-modules javafx.controls,javafx.fxml",
       "jdkPath": "${env:JAVA_HOME}/bin",
       "cwd": "${fileDirname}",
-      "startupClass": "${fileBasenameNoExtension}",
+      "startupClass": "${fileBasenameNoExtension}"
     },
     {
       "type": "java",
@@ -61,7 +82,7 @@
       "vmArgs": "--module-path /home/msilva/openjfx-20.0.2_linux-x64_bin-sdk/javafx-sdk-20.0.2/lib --add-modules javafx.controls,javafx.fxml",
       "jdkPath": "${env:JAVA_HOME}/bin",
       "cwd": "${fileDirname}",
-      "startupClass": "${fileBasenameNoExtension}",
+      "startupClass": "${fileBasenameNoExtension}"
     },
     {
       "type": "java",
@@ -72,7 +93,7 @@
       "vmArgs": "--module-path /home/msilva/openjfx-20.0.2_linux-x64_bin-sdk/javafx-sdk-20.0.2/lib --add-modules javafx.controls,javafx.fxml",
       "jdkPath": "${env:JAVA_HOME}/bin",
       "cwd": "${fileDirname}",
-      "startupClass": "${fileBasenameNoExtension}",
+      "startupClass": "${fileBasenameNoExtension}"
     },
     {
       "type": "java",
@@ -83,7 +104,7 @@
       "vmArgs": "--module-path /home/msilva/openjfx-20.0.2_linux-x64_bin-sdk/javafx-sdk-20.0.2/lib --add-modules javafx.controls,javafx.fxml",
       "jdkPath": "${env:JAVA_HOME}/bin",
       "cwd": "${fileDirname}",
-      "startupClass": "${fileBasenameNoExtension}",
+      "startupClass": "${fileBasenameNoExtension}"
     },
     {
       "type": "java",
@@ -94,7 +115,7 @@
       "vmArgs": "--module-path /home/msilva/openjfx-20.0.2_linux-x64_bin-sdk/javafx-sdk-20.0.2/lib --add-modules javafx.controls,javafx.fxml",
       "jdkPath": "${env:JAVA_HOME}/bin",
       "cwd": "${fileDirname}",
-      "startupClass": "${fileBasenameNoExtension}",
+      "startupClass": "${fileBasenameNoExtension}"
     },
     {
       "type": "java",
@@ -105,7 +126,7 @@
       "vmArgs": "--module-path /home/msilva/openjfx-20.0.2_linux-x64_bin-sdk/javafx-sdk-20.0.2/lib --add-modules javafx.controls,javafx.fxml",
       "jdkPath": "${env:JAVA_HOME}/bin",
       "cwd": "${fileDirname}",
-      "startupClass": "${fileBasenameNoExtension}",
+      "startupClass": "${fileBasenameNoExtension}"
     },
     {
       "type": "java",
@@ -116,7 +137,7 @@
       "vmArgs": "--module-path /home/msilva/openjfx-20.0.2_linux-x64_bin-sdk/javafx-sdk-20.0.2/lib --add-modules javafx.controls,javafx.fxml",
       "jdkPath": "${env:JAVA_HOME}/bin",
       "cwd": "${fileDirname}",
-      "startupClass": "${fileBasenameNoExtension}",
+      "startupClass": "${fileBasenameNoExtension}"
     }
   ]
 }

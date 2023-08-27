@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
@@ -14,22 +14,16 @@
             <Font size="26.0" />
          </font>
       </Label>
-      <TextField fx:id="txtBuscar" layoutX="33.0" layoutY="107.0" promptText="Busca" />
       <TextField fx:id="txtUser" layoutX="34.0" layoutY="167.0" prefHeight="24.0" prefWidth="92.0" promptText="User" />
       <TextField fx:id="txtNome" layoutX="135.0" layoutY="167.0" prefHeight="24.0" prefWidth="323.0" promptText="Nome" />
       <TextField fx:id="txtSenha" layoutX="469.0" layoutY="107.0" prefHeight="24.0" prefWidth="112.0" promptText="Senha" />
       <TextField fx:id="txtConfirma" layoutX="469.0" layoutY="167.0" prefHeight="24.0" prefWidth="112.0" promptText="Confirmação" />
-      <Label layoutX="34.0" layoutY="81.0" text="BUSCAR" />
       <Label layoutX="34.0" layoutY="144.0" text="USER" />
       <Label layoutX="137.0" layoutY="144.0" text="NOME" />
       <Label layoutX="470.0" layoutY="87.0" text="SENHA" />
-      <Button fx:id="btncadas" layoutX="193.0" layoutY="236.0" mnemonicParsing="false" prefWidth="92.0" text="CADASTRO" />
-      <Button fx:id="btbEditar" layoutX="294.0" layoutY="236.0" mnemonicParsing="false" prefWidth="92.0" text="EDITAR" />
-      <Button fx:id="btnDeleta" layoutX="395.0" layoutY="236.0" mnemonicParsing="false" prefWidth="92.0" text="DELETA" />
-      <Button fx:id="btnCancela" layoutX="497.0" layoutY="236.0" mnemonicParsing="false" prefWidth="92.0" text="CANCELA" />
-      <Button fx:id="btbBuscar" layoutX="92.0" layoutY="236.0" mnemonicParsing="false" prefWidth="92.0" text="BUSCAR" />
+      <Button fx:id="btncadas" layoutX="360.0" layoutY="236.0" mnemonicParsing="false" prefWidth="102.0" text="CADASTRAR" />
+      <Button fx:id="btnCancela" layoutX="476.0" layoutY="236.0" mnemonicParsing="false" prefWidth="102.0" text="CANCELA" />
       <Label layoutX="472.0" layoutY="144.0" text="Confirmação" />
-      <CheckBox fx:id="chcUser" layoutX="287.0" layoutY="111.0" mnemonicParsing="false" text="User" />
-      <CheckBox fx:id="chcNome" layoutX="213.0" layoutY="110.0" mnemonicParsing="false" text="Nome" />
+      <Separator layoutX="26.0" layoutY="62.0" prefHeight="0.0" prefWidth="564.0" />
    </children>
 </Pane>
