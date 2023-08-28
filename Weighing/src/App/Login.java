@@ -7,9 +7,7 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 public class Login extends Application {
-  private static Stage stage;
-
-  public static void main(String[] args) {
+  private static Stage stage;  public static void main(String[] args) {
     launch(args);
   }
 

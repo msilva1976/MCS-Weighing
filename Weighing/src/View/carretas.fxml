@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane fx:id="txtPlaca" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="359.0" prefWidth="546.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.CarretasController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="359.0" prefWidth="546.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.CarretasController">
    <children>
       <Label layoutX="33.0" layoutY="18.0" text="Carretas">
          <font>
@@ -21,7 +21,7 @@
       <Label layoutX="428.0" layoutY="152.0" text="Exos" />
       <Label layoutX="33.0" layoutY="217.0" text="Destino" />
       <Label layoutX="373.0" layoutY="217.0" text="Capacidade" />
-      <TextField fx:id="txtPlava" layoutX="33.0" layoutY="120.0" prefHeight="24.0" prefWidth="121.0" promptText="Frota" />
+      <TextField fx:id="txtfrota" layoutX="33.0" layoutY="120.0" prefHeight="24.0" prefWidth="121.0" promptText="Frota" />
       <TextField fx:id="txtPlacaCarreta" layoutX="162.0" layoutY="120.0" prefHeight="24.0" prefWidth="163.0" promptText="Placa Carreta" />
       <TextField fx:id="txttxtPlaCavalo" layoutX="334.0" layoutY="120.0" promptText="Placa Cavalo" />
       <TextField fx:id="txtMotorista" layoutX="33.0" layoutY="180.0" prefHeight="24.0" prefWidth="382.0" promptText="Motorista" />

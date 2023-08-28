@@ -21,7 +21,7 @@ public class CarretaDao {
   }
 
   public boolean carretaadd(Carreta carreta) {
-    String sql = "INSERT INTO carretas (frota,placa carreta,placa cavalo,motorista,eixos,destino,capacidade)VALUE(?,?,?,?,?,?,?)";
+    String sql = "INSERT INTO  mydb.carretas (frota,carreta,cavalo,motorista,eixo,destino,capacidade)VALUE(?,?,?,?,?,?,?)";
     try {
       PreparedStatement stmt = conn.prepareStatement(sql);
       stmt.setString(1, carreta.getFrota());

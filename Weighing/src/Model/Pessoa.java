@@ -2,9 +2,10 @@ package Model;
 
 public class Pessoa {
   private long id;
-  private String user;
+  private String user;  
   private String nome;
   private String senha;
+ 
   public Pessoa(long id, String user, String nome, String senha) {
     this.id = id;
     this.user = user;

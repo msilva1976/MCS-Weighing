@@ -20,9 +20,7 @@ import javafx.stage.Stage;
 
 
 
-public class BobsController implements Initializable {
-
-    
+public class BobsController implements Initializable {    
 
   @FXML  private Button btnCadastra;
   @FXML  private Button btnCancela;
@@ -92,9 +90,9 @@ public class BobsController implements Initializable {
   }
   private void cadastraBob(){
     String frota = txtFrota.getText();
-    String placaBos = txtPlaca.getText();
+    String placaBos = txtPlaca.getText().toUpperCase();
     String tara = txtTara.getText();
-    String motorista = txtMotorista.getText();
+    String motorista = txtMotorista.getText().toUpperCase();
     Bob bob = new Bob(0, frota, placaBos, tara, motorista);
     BobDao bobDao = new BobDao();
     if (bobDao.bobadd(bob)) {

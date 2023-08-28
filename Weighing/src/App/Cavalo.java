@@ -28,5 +28,7 @@ public class Cavalo extends Application{
   public static void setStage(Stage stage) {
     Cavalo.stage = stage;
   }
+
+
   
 }

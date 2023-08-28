@@ -62,8 +62,8 @@ public class UsuariosController implements Initializable{
 
   }
   private void cadastroUser(){
-    String user = txtUser.getText();
-    String nome = txtNome.getText();
+    String user =  txtUser.getText().toUpperCase();
+    String nome = txtNome.getText().toUpperCase();
     String senha = txtSenha.getText();
     String confirma = txtConfirma.getText();
     if (senha.equals(confirma) == true) {
