@@ -8,8 +8,9 @@ import javafx.stage.Stage;
 
 public class Bobs extends Application {
   private static Stage stage;
+
   public static void main(String[] args) {
-    launch( args);
+    launch(args);
   }
 
   @Override
@@ -21,7 +22,6 @@ public class Bobs extends Application {
     thirdStage.show();
     setStage(thirdStage);
 
-
   }
 
   public static Stage getStage() {
@@ -31,5 +31,5 @@ public class Bobs extends Application {
   public static void setStage(Stage stage) {
     Bobs.stage = stage;
   }
-  
+
 }

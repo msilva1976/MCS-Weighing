@@ -6,7 +6,7 @@ import java.util.ResourceBundle;
 import App.Bobs;
 import App.Principal;
 import DAO.BobDao;
-import Model.Bob;
+import Model.BobModel;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Alert;
@@ -93,12 +93,13 @@ public class BobsController implements Initializable {
     String placaBos = txtPlaca.getText().toUpperCase();
     String tara = txtTara.getText();
     String motorista = txtMotorista.getText().toUpperCase();
-    Bob bob = new Bob(0, frota, placaBos, tara, motorista);
+    BobModel bob = new BobModel(0, frota, placaBos, tara, motorista);
     BobDao bobDao = new BobDao();
     if (bobDao.bobadd(bob)) {
       Alert alert = new Alert(javafx.scene.control.Alert.AlertType.CONFIRMATION);
       alert.setHeaderText("Bobtail Cadastrado");
       alert.showAndWait();
+      fechar();
     } else {
       Alert alert = new Alert(javafx.scene.control.Alert.AlertType.ERROR);
       alert.setHeaderText("Bobtail não Cadastrado.");

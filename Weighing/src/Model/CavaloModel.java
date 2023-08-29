@@ -1,25 +1,25 @@
 package Model;
 
-public class cavalo {
+public class CavaloModel {
   private long id;
   private String frota;
-  private String placa;
+  private String cavalo;
   private String empresa;
   private String motorista;
-  public cavalo(long id, String frota, String placa, String empresa, String motorista) {
+  public CavaloModel(long id, String frota, String cavalo, String empresa, String motorista) {
     this.id = id;
     this.frota = frota;
-    this.placa = placa;
+    this.cavalo = cavalo;
     this.empresa = empresa;
     this.motorista = motorista;
   }
-  public cavalo(String frota, String placa, String empresa, String motorista) {
+  public CavaloModel(String frota, String cavalo, String empresa, String motorista) {
     this.frota = frota;
-    this.placa = placa;
+    this.cavalo = cavalo;
     this.empresa = empresa;
     this.motorista = motorista;
   }
-  public cavalo() {
+  public CavaloModel() {
   }
   public long getId() {
     return id;
@@ -33,11 +33,11 @@ public class cavalo {
   public void setFrota(String frota) {
     this.frota = frota;
   }
-  public String getPlaca() {
-    return placa;
+  public String getCavalo() {
+    return cavalo;
   }
-  public void setPlaca(String placa) {
-    this.placa = placa;
+  public void setCavalo(String cavalo) {
+    this.cavalo = cavalo;
   }
   public String getEmpresa() {
     return empresa;
@@ -51,13 +51,6 @@ public class cavalo {
   public void setMotorista(String motorista) {
     this.motorista = motorista;
   }
-  public String getCavalo() {
-    return null;
-  }
-  public long getid() {
-    return 0;
-  }
-  public void add(Object cavalob) {
-  }
-  
+
+
 }

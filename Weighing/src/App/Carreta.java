@@ -6,7 +6,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-public class Carretas extends Application {
+public class Carreta extends Application {
   private static Stage stage;
 
   public static void main(String[] args) {
@@ -29,7 +29,7 @@ public class Carretas extends Application {
   }
 
   public static void setStage(Stage stage) {
-    Carretas.stage = stage;
+    Carreta.stage = stage;
   }
   
 }

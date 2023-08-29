@@ -3,10 +3,10 @@ package Controller;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-import App.Carretas;
+import App.Carreta;
 import App.Principal;
 import DAO.CarretaDao;
-import Model.Carreta;
+import Model.CarretaModel;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Alert;
@@ -91,7 +91,7 @@ public class CarretasController implements Initializable {
 
     }
     public void fechar(){
-      Carretas.getStage().close();
+      Carreta.getStage().close();
       Principal principal = new Principal();
     try {
       principal.start(new Stage());
@@ -108,7 +108,7 @@ public class CarretasController implements Initializable {
       String eixos = txtEixo.getText();
       String destino  = txtDestino.getText().toUpperCase();
       String capacidade = txtCapacidade.getText();
-       Carreta carreta = new Carreta(0, frota, placaCarreta, placcaCavalo, motorista, eixos, destino, capacidade);
+       CarretaModel carreta = new CarretaModel(0, frota, placaCarreta, placcaCavalo, motorista, eixos, destino, capacidade);
        CarretaDao carretaDao = new CarretaDao();
        if (carretaDao.carretaadd(carreta)) {
          Alert alert = new Alert(AlertType.CONFIRMATION);

@@ -88,33 +88,7 @@ public class UsuariosController implements Initializable{
     fechar();
  
   }
-  // private void editaUser(){
-  //   String user = txtUser.getText();
-  //   String nome = txtNome.getText();
-  //   String senha = txtSenha.getText();
-  //   String confirma = txtConfirma.getText();
-  //   if (senha.equals(confirma) == true) {
-  //      Pessoa pessoa =  new Pessoa(user,nome,senha);
-  //      PessoaDao dao = new PessoaDao();
-  //      if (dao.update(pessoa)) {
-  //        Alert alert = new Alert(AlertType.CONFIRMATION);
-  //        alert.setHeaderText("Usuario cadastrado.");
-  //        alert.showAndWait();
 
-  //      } else {
-  //        Alert alert = new Alert(AlertType.ERROR);
-  //        alert.setHeaderText("Usuario não cadastrado.");
-  //        alert.showAndWait();
-  //      }
-
-  //   } else {
-  //     Alert alert = new Alert(AlertType.ERROR);
-  //     alert.setHeaderText("Senhas diferentes!");
-  //     alert.showAndWait();
-  //   }
-  //   fechar();
-
-  // }
 
 
 }

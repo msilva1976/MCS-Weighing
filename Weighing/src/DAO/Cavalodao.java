@@ -6,7 +6,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
-import Model.cavalo;
+import Model.CavaloModel;
 import JDBC.ConnectioFactory;
 
 
@@ -17,13 +17,13 @@ public class Cavalodao {
   public Cavalodao(){
     this.conn = new ConnectioFactory().getConnection();
   }
-  public boolean cavaloadd(cavalo cavalo){
+  public boolean cavaloadd(CavaloModel cavalo){
   
     String sql = "INSERT INTO cavalo(frota,cavalo,empresa,motorista)VALUE(?,?,?,?)";
     try {
       PreparedStatement stmt = conn.prepareStatement(sql);
       stmt.setString(1, cavalo.getFrota());
-      stmt.setString(2,cavalo.getPlaca());
+      stmt.setString(2,cavalo.getCavalo());
       stmt.setString(3, cavalo.getEmpresa());
       stmt.setString(4, cavalo.getMotorista());
     
@@ -37,7 +37,7 @@ public class Cavalodao {
     return false;
 
   }
-    public boolean cavaloupdate(cavalo cavalo){
+    public boolean cavaloupdate(CavaloModel cavalo){
     String sql = "UPDATE cavalo SET frota = ?, cavalo = ?, empresa = ?, motorista = ? WHERE id = ?;";
     
     try {
@@ -56,11 +56,11 @@ public class Cavalodao {
     return false;
 
   }
-  public boolean cavalodelete(cavalo cavalo){
+  public boolean cavalodelete(CavaloModel cavalo){
     String sql = "DELETE FROM cavalo WHERE id=?;";
     try {
       PreparedStatement stmt = conn.prepareStatement(sql);
-      stmt.setLong(1, cavalo.getid());
+      stmt.setLong(1, cavalo.getId());
       stmt.execute();
       stmt.close();
       conn.close();
@@ -71,32 +71,30 @@ public class Cavalodao {
     return false;
 
   }
-  public List<cavalo>getList(){
-    List<cavalo>cavalos = new ArrayList<>();
-    String sql = "SELECT FROM cavalo";
+  public List<CavaloModel>getList(){
+    List<CavaloModel>cavaloModels = new ArrayList<>();
+    String sql = "SELECT * FROM cavalo";
     try {
       PreparedStatement stmt = conn.prepareStatement(sql);
-      ResultSet re = stmt.executeQuery();
-      while (re.next()) {
-        cavalo cavalo = new cavalo();
-        cavalo.setId(re.getLong("id"));
-        cavalo.setFrota(re.getString("Frota"));
-        cavalo.setPlaca(re.getString("Placa"));
-        cavalo.setEmpresa(re.getString("Empresa "));
-        cavalo.setMotorista(re.getString("motorista"));
-        cavalo.add(cavalo);
+      ResultSet r = stmt.executeQuery();
+      while (r.next()) {
+        CavaloModel cavaloModel = new CavaloModel();
+        cavaloModel.setId(r.getLong("id"));
+        cavaloModel.setFrota(r.getString("frota"));
+        cavaloModel.setCavalo(r.getString("cavalo"));
+        cavaloModel.setMotorista(r.getString("motorista"));
+        cavaloModels.add(cavaloModel);
+
       }
       stmt.close();
-      re.close();
+      r.close();
       conn.close();
     } catch (SQLException e) {
-      System.out.println("ERRO!");    
+      
       e.printStackTrace();
       return null;
     }
-    return cavalos;
-    
-
+    return cavaloModels;
 
   }
 

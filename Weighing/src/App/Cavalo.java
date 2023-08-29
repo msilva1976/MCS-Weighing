@@ -9,6 +9,10 @@ import javafx.stage.Stage;
 public class Cavalo extends Application{
   private static Stage stage;
 
+  public Cavalo(String frota, String placacavalo, String empresa, String motorista) {
+  }
+  public Cavalo() {
+  }
   public static void main(String[] args) {
     launch(args);
   }

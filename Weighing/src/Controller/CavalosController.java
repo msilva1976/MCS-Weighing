@@ -7,14 +7,14 @@ import App.Cavalo;
 import App.Principal;
 
 import DAO.Cavalodao;
-
-import Model.cavalo;
+import Model.CavaloModel;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 
 import javafx.scene.control.TextField;
+import javafx.scene.control.Alert.AlertType;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
@@ -40,11 +40,11 @@ public class CavalosController implements Initializable {
       }
     });
     btnCadastrar.setOnMouseClicked((MouseEvent)->{
-      cadastraCarreta();
+      cadastracavalo();
     });
     btnCadastrar.setOnKeyPressed((KeyEvent e)->{
       if (e.getCode() == KeyCode.ENTER) {
-        cadastraCarreta();
+        cadastracavalo();
       }
     });
     txtFrota.setOnKeyPressed((KeyEvent e)->{
@@ -74,7 +74,7 @@ public class CavalosController implements Initializable {
 
     btnCadastrar.setOnKeyPressed((KeyEvent e)->{
       if (e.getCode() == KeyCode.ENTER) {
-        cadastraCarreta();
+        cadastracavalo();
       }
     });
 
@@ -92,21 +92,25 @@ public class CavalosController implements Initializable {
     }
 
   }
-  private void cadastraCarreta(){
+  private void cadastracavalo(){
     String frota = txtFrota.getText();
-    String cavalos = txtPlaCavalo.getText().toUpperCase();
-    String empresa = txtEmpresa.getText().toUpperCase();
-    String motorista = txtMotorista.getText().toUpperCase(); 
-    cavalo cavalo = new cavalo(0, frota, cavalos, empresa, motorista) ; 
-    Cavalodao cavalodao = new Cavalodao();
+    String placacavalo = txtPlaCavalo.getText().toUpperCase();   
+    String empresa =  txtEmpresa.getText().toUpperCase();
+    String motorista = txtMotorista.getText().toUpperCase();
+    Model.CavaloModel cavalo = new CavaloModel(0, frota, placacavalo, empresa, motorista);
+    Cavalodao cavalodao = new Cavalodao(); 
     if (cavalodao.cavaloadd(cavalo)) {
-        Alert alert = new Alert(javafx.scene.control.Alert.AlertType.CONFIRMATION);
-      alert.setHeaderText("Bobtail Cadastrado");
-      alert.showAndWait();
+      Alert alert = new Alert(AlertType.CONFIRMATION);
+      alert.setHeaderText("Cavalo Cadastrado");
+      alert.showAndWait();  
+      fechar();    
     } else {
-      Alert alert = new Alert(javafx.scene.control.Alert.AlertType.ERROR);
-      alert.setHeaderText("Bobtail não Cadastrado.");
+      Alert alert = new Alert(AlertType.ERROR);
+      alert.setHeaderText("Cavalo não Cadastrado");
+      alert.showAndWait();
+      
     }
+   
     }
     
 

@@ -68,26 +68,26 @@
         </Menu>
       </menus>
     </MenuBar>
-      <TabPane fx:id="tbtTaberlaUser" prefHeight="882.0" prefWidth="1282.0" side="BOTTOM">
+      <TabPane prefHeight="882.0" prefWidth="1282.0" side="BOTTOM">
         <tabs>
           <Tab fx:id="abaCarretas" text="CARRETAS">
                <content>
-                  <AnchorPane fx:id="txtcarreBusca" prefHeight="200.0" prefWidth="200.0">
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
                      <children>
-                        <TableView layoutX="14.0" layoutY="14.0" prefHeight="480.0" prefWidth="1048.0">
+                        <TableView fx:id="tbtcarretas" layoutX="14.0" layoutY="14.0" prefHeight="480.0" prefWidth="1048.0">
                           <columns>
-                            <TableColumn prefWidth="75.0" text="FROTA" />
-                            <TableColumn prefWidth="141.0" text="PLACA CARRETA" />
-                              <TableColumn prefWidth="142.0" text="PLACA CAVALO" />
-                              <TableColumn prefWidth="298.0" text="NOME MOTORISTA" />
-                              <TableColumn prefWidth="129.0" text="CAPACIDADE" />
-                              <TableColumn prefWidth="68.0" text="EIXOS" />
-                              <TableColumn prefWidth="194.0" text="DESTINO" />
+                            <TableColumn fx:id="tblCarrFrota" prefWidth="75.0" text="FROTA" />
+                            <TableColumn fx:id="tblCarrCarreta" prefWidth="141.0" text="PLACA CARRETA" />
+                              <TableColumn fx:id="tblCarrCavalo" prefWidth="142.0" text="PLACA CAVALO" />
+                              <TableColumn fx:id="tblCarrMotorista" prefWidth="298.0" text="NOME MOTORISTA" />
+                              <TableColumn fx:id="tblCarrCapacidade" prefWidth="129.0" text="CAPACIDADE" />
+                              <TableColumn fx:id="tblCarrEixos" prefWidth="68.0" text="EIXOS" />
+                              <TableColumn fx:id="tblCarrDestino" prefWidth="194.0" text="DESTINO" />
                           </columns>
                         </TableView>
                         <Button fx:id="btccarredeleta" layoutX="14.0" layoutY="515.0" mnemonicParsing="false" prefWidth="121.0" text="DELETA" />
                         <Button fx:id="btncarreatualiza" layoutX="145.0" layoutY="515.0" mnemonicParsing="false" prefWidth="121.0" text="ATUALIZA" />
-                        <TextField layoutX="1069.0" layoutY="42.0" prefHeight="24.0" prefWidth="210.0" promptText="Busca" />
+                        <TextField fx:id="txtcarreBusca" layoutX="1069.0" layoutY="42.0" prefHeight="24.0" prefWidth="210.0" promptText="Busca" />
                         <Button fx:id="btnCarreBusca" layoutX="1283.0" layoutY="42.0" mnemonicParsing="false" text="OK">
                            <font>
                               <Font name="System Bold" size="13.0" />
@@ -101,12 +101,12 @@
                <content>
                   <AnchorPane prefHeight="200.0" prefWidth="200.0">
                      <children>
-                        <TableView layoutX="14.0" layoutY="14.0" prefHeight="480.0" prefWidth="1048.0">
+                        <TableView fx:id="tbtBob" layoutX="14.0" layoutY="14.0" prefHeight="480.0" prefWidth="1048.0">
                           <columns>
-                            <TableColumn prefWidth="138.0" text="FROTA" />
-                            <TableColumn prefWidth="146.0" text="PLACA" />
-                              <TableColumn prefWidth="129.0" text="TARA" />
-                              <TableColumn prefWidth="307.0" text="NOME MOTORISTA" />
+                            <TableColumn fx:id="tblBobfrota" prefWidth="138.0" text="FROTA" />
+                            <TableColumn fx:id="tblBobPlca" prefWidth="146.0" text="PLACA" />
+                              <TableColumn fx:id="tblBobTara" prefWidth="129.0" text="TARA" />
+                              <TableColumn fx:id="tblBobNomeMo" prefWidth="307.0" text="NOME MOTORISTA" />
                           </columns>
                         </TableView>
                         <Button fx:id="btnBobDeleta" layoutX="14.0" layoutY="515.0" mnemonicParsing="false" prefWidth="121.0" text="DELETA" />
@@ -118,11 +118,32 @@
                   </AnchorPane>
                </content>
             </Tab>
+            <Tab fx:id="abaUser1" text="CAVALO">
+               <content>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="tbtCavaloCavalo" layoutX="14.0" layoutY="14.0" prefHeight="480.0" prefWidth="952.0">
+                           <columns>
+                              <TableColumn fx:id="tblCavaloFrota" prefWidth="195.0" text="FROTA" />
+                              <TableColumn fx:id="tblCavaloCavalo" prefWidth="174.0" text="CAVALO" />
+                              <TableColumn fx:id="tblCavaloEmpresa" prefWidth="237.0" text="EMPRESA" />
+                              <TableColumn fx:id="tblCavaloMotorista" prefWidth="237.0" text="MOTORISTA" />
+                           </columns>
+                        </TableView>
+                        <Label layoutX="994.0" layoutY="24.0" text="BUSCA" />
+                        <TextField fx:id="txtCavaloBusca" layoutX="994.0" layoutY="53.0" prefHeight="24.0" prefWidth="225.0" promptText="BUSCA" />
+                        <Button fx:id="btnCavaloOk" layoutX="1231.0" layoutY="53.0" mnemonicParsing="false" text="OK" />
+                        <Button fx:id="btnCavaloDeleta" layoutX="14.0" layoutY="515.0" mnemonicParsing="false" prefWidth="121.0" text="DELETA" />
+                        <Button fx:id="btnCavaloAtualiza" layoutX="145.0" layoutY="515.0" mnemonicParsing="false" prefWidth="121.0" text="ATUALIZA" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
             <Tab fx:id="abaUser" text="USUARIOS">
                <content>
                   <AnchorPane prefHeight="200.0" prefWidth="200.0">
                      <children>
-                        <TableView fx:id="tbwUser" layoutX="14.0" layoutY="14.0" prefHeight="480.0" prefWidth="952.0">
+                        <TableView fx:id="tbtUser" layoutX="14.0" layoutY="14.0" prefHeight="480.0" prefWidth="952.0">
                           <columns>
                             <TableColumn fx:id="tbUseUser" prefWidth="195.0" text="USER" />
                             <TableColumn fx:id="tbUserNome" prefWidth="613.0" text="NOME" />

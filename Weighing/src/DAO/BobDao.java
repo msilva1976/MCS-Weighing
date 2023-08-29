@@ -6,7 +6,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
-import Model.Bob;
+import Model.BobModel;
 import JDBC.ConnectioFactory;
 
 
@@ -17,7 +17,7 @@ public class BobDao {
     this.conn = new ConnectioFactory().getConnection();
   }
 
-  public boolean bobadd(Bob bob) {
+  public boolean bobadd(BobModel bob) {
     String sql = "INSERT INTO bobtail(frota,placa,tara,motorista)VALUE(?,?,?,?)";
     try {
       PreparedStatement stmt = conn.prepareStatement(sql);
@@ -36,7 +36,7 @@ public class BobDao {
     return false;
 
   }
-  public boolean bobupdate(Bob bob){
+  public boolean bobupdate(BobModel bob){
     String sql = "UPDATE bobtail SET frota = ?, placa = ?, tara = ?, motorista = ? WHERE id = ?;";
     try {
       PreparedStatement stmt = conn.prepareStatement(sql);
@@ -53,7 +53,7 @@ public class BobDao {
     }
     return false;
   }
-  public boolean bobdelete(Bob bob){
+  public boolean bobdelete(BobModel bob){
     String sql = "DELETE FROM bobtail WHERE id=?;";
     try {
       PreparedStatement stmt = conn.prepareStatement(sql);
@@ -68,34 +68,33 @@ public class BobDao {
     return false;
 
   }
-  public List<Bob>getList(){
-    List<Bob>bobs = new ArrayList<>();
-    String sql = "SELECT FROM bobtail";
+  public List<BobModel>getList(){
+    List<BobModel>bobModels = new ArrayList<>();
+    String sql = "SELECT * FROM bobtail";
     try {
       PreparedStatement stmt = conn.prepareStatement(sql);
-      ResultSet re = stmt.executeQuery();
-      while (re.next()) {
-        Bob bob = new Bob();
-        bob.setId(re.getLong("id"));
-        bob.setFrota(re.getString("Frota"));
-        bob.setPlaca(re.getString("Placa"));
-        bob.setTara(re.getString("Tara "));
-        bob.setMotorista(re.getString("Motorista"));
-        bobs.add(bob);
+      ResultSet r = stmt.executeQuery();
+      while (r.next()) {
+        BobModel bobModel = new BobModel();
+        bobModel.setId(r.getLong("id"));
+        bobModel.setFrota(r.getString("frota"));
+        bobModel.setPlaca(r.getString("placa"));
+        bobModel.setTara(r.getString("tara"));
+        bobModel.setMotorista(r.getString("motorista"));
+        bobModels.add(bobModel);
       }
       stmt.close();
-      re.close();
+      r.close();
       conn.close();
     } catch (SQLException e) {
-      System.out.println("ERRO!");    
+      
       e.printStackTrace();
       return null;
     }
-    return bobs;
+    return bobModels;
     
-
-
   }
+  
 
 
 }

@@ -1,30 +1,26 @@
 package Model;
 
-public class Bob {
+public class BobModel {
   private long id;
   private String frota;
   private String placa;
   private String tara;
   private String motorista;
- 
-
-  public Bob(long id, String frota, String placa, String tara, String motorista) {
+  public BobModel(long id, String frota, String placa, String tara, String motorista) {
     this.id = id;
     this.frota = frota;
     this.placa = placa;
     this.tara = tara;
     this.motorista = motorista;
   }
-  
-  
-  public Bob() {
+  public BobModel(String frota, String placa, String tara, String motorista) {
+    this.frota = frota;
+    this.placa = placa;
+    this.tara = tara;
+    this.motorista = motorista;
   }
-
-
-  public Bob(long id) {
-    this.id = id;
+  public BobModel() {
   }
-
   public long getId() {
     return id;
   }
@@ -37,7 +33,12 @@ public class Bob {
   public void setFrota(String frota) {
     this.frota = frota;
   }
-  
+  public String getPlaca() {
+    return placa;
+  }
+  public void setPlaca(String placa) {
+    this.placa = placa;
+  }
   public String getTara() {
     return tara;
   }
@@ -50,22 +51,7 @@ public class Bob {
   public void setMotorista(String motorista) {
     this.motorista = motorista;
   }
-  public void mostrarBob(){
-    System.out.println("__________________________________________");
-    System.out.println("            id: "+getId());
-    System.out.println("         Frota: "+getFrota());
-    System.out.println("         Placa: "+getPlaca());
-    System.out.println("          Tara: "+getTara());
-    System.out.println("Nome Motorista: "+getMotorista());
-  }
-  public String getPlaca() {
-    return placa;
-  }
-  public void setPlaca(String placa) {
-    this.placa = placa;
-  }
-  
-  
 
+  
   
 }
