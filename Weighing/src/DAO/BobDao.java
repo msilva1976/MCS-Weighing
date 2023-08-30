@@ -7,6 +7,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 import Model.BobModel;
+
 import JDBC.ConnectioFactory;
 
 
@@ -53,11 +54,11 @@ public class BobDao {
     }
     return false;
   }
-  public boolean bobdelete(BobModel bob){
+  public boolean bobDeleta(BobModel bobModel){
     String sql = "DELETE FROM bobtail WHERE id=?;";
     try {
       PreparedStatement stmt = conn.prepareStatement(sql);
-      stmt.setLong(1, bob.getId());
+      stmt.setLong(1,bobModel.getId());
       stmt.execute();
       stmt.close();
       conn.close();
@@ -93,6 +94,9 @@ public class BobDao {
     }
     return bobModels;
     
+  }
+
+  public void bobdelete(BobModel selecionadaBobModel) {
   }
   
 

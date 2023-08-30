@@ -63,20 +63,23 @@ public class CarretaDao {
     return false;
   }
 
-  public boolean carretadelete(CarretaModel carreta) {
-    String sql = "DELETE FROM carretas WHERE id = ?;";
+  
+    
+    
+  public boolean deletaCarreta(CarretaModel carretaModel){
+    String sql = "DELETE FROM carretas WHERE id=?;";
     try {
       PreparedStatement stmt = conn.prepareStatement(sql);
-      stmt.setLong(1, carreta.getId());
+      stmt.setLong(1,carretaModel.getId());
       stmt.execute();
       stmt.close();
       conn.close();
-      return true;
     } catch (SQLException e) {
-
+      
       e.printStackTrace();
     }
     return false;
+
   }
   public List<CarretaModel>getList(){
     List<CarretaModel>carretaModels = new ArrayList<>();

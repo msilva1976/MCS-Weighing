@@ -53,6 +53,7 @@ public class UsuariosController implements Initializable{
   public void fechar() {
     Usuarios.getStage().close();
     Principal principal = new Principal();
+    
     try {
       principal.start(new Stage());
     } catch (Exception e) {

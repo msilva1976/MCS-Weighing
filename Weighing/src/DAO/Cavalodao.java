@@ -82,6 +82,7 @@ public class Cavalodao {
         cavaloModel.setId(r.getLong("id"));
         cavaloModel.setFrota(r.getString("frota"));
         cavaloModel.setCavalo(r.getString("cavalo"));
+        cavaloModel.setEmpresa(r.getString("empresa"));
         cavaloModel.setMotorista(r.getString("motorista"));
         cavaloModels.add(cavaloModel);
 

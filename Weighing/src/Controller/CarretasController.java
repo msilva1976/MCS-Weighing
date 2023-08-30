@@ -113,7 +113,8 @@ public class CarretasController implements Initializable {
        if (carretaDao.carretaadd(carreta)) {
          Alert alert = new Alert(AlertType.CONFIRMATION);
        alert.setHeaderText("Carreta Cadastrada.");
-       alert.showAndWait();        
+       alert.showAndWait();   
+       fechar();     
        }else{
         Alert alert = new Alert(AlertType.ERROR);
         alert.setHeaderText("Carreta Não Cadastrada");

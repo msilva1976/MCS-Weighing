@@ -100,14 +100,14 @@ public class CavalosController implements Initializable {
     Model.CavaloModel cavalo = new CavaloModel(0, frota, placacavalo, empresa, motorista);
     Cavalodao cavalodao = new Cavalodao(); 
     if (cavalodao.cavaloadd(cavalo)) {
-      Alert alert = new Alert(AlertType.CONFIRMATION);
-      alert.setHeaderText("Cavalo Cadastrado");
-      alert.showAndWait();  
-      fechar();    
-    } else {
       Alert alert = new Alert(AlertType.ERROR);
       alert.setHeaderText("Cavalo não Cadastrado");
       alert.showAndWait();
+    } else {      
+      Alert alert = new Alert(javafx.scene.control.Alert.AlertType.CONFIRMATION);
+      alert.setHeaderText("Cavalo Cadastrado");
+      alert.showAndWait();  
+      fechar();    
       
     }
    
