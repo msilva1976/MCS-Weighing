@@ -23,6 +23,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.MenuItem;
 import javafx.scene.control.Tab;
 
@@ -39,44 +40,16 @@ import javafx.stage.Stage;
 public class PrincipalController implements Initializable {
 
     protected static final CavaloModel newValue = null;
-    @FXML    private Tab abaBob;
-    @FXML    private Tab abaCarretas;
-    @FXML    private Tab abaUser;
-    @FXML    private Button btbBobBusca;    
-    @FXML    private Button btccarredeleta;
-    @FXML    private Button btnAtualiza;
-    @FXML    private Button btnBobAtualiza;
-    @FXML    private Button btnBobDeleta;
-    @FXML    private Button btnCarreBusca;
-    @FXML    private Button btnCavaloAtualiza;
-    @FXML    private Button btnCavaloDeleta;
-    @FXML    private Button btnCavaloOk;
-    @FXML    private Button btnDeleta;
-    @FXML    private Button btnbusca;
-    @FXML    private Button btncarreatualiza;
-    @FXML    private MenuItem menuBobs;
-    @FXML    private MenuItem menuCarretas;
-    @FXML    private MenuItem menuCavalos;
-    @FXML    private MenuItem menuSair;
-    @FXML    private MenuItem menuUsuarios;
-    @FXML    private TableColumn<Pessoa, String> tbUseUser;
-    @FXML    private TableColumn<Pessoa, String> tbUserNome;
-    @FXML    private TableColumn<Pessoa, String> tbUserSenha;  
-    @FXML    private TableColumn<BobModel, String> tblBobfrota;  
-    @FXML    private TableColumn<BobModel, String> tblBobPlca;
-    @FXML    private TableColumn<BobModel, String> tblBobTara;    
-    @FXML    private TableColumn<BobModel, String> tblBobNomeMo;
-    @FXML    private TableColumn<CarretaModel, String> tblCarrFrota;
-    @FXML    private TableColumn<CarretaModel, String> tblCarrCarreta;
-    @FXML    private TableColumn<CarretaModel, String> tblCarrCavalo;
-    @FXML    private TableColumn<CarretaModel, String> tblCarrMotorista;
-    @FXML    private TableColumn<CarretaModel, String> tblCarrEixos;
-    @FXML    private TableColumn<CarretaModel, String> tblCarrDestino;
-    @FXML    private TableColumn<CarretaModel, String> tblCarrCapacidade; 
-    @FXML    private TableColumn<CavaloModel,String> tblCavaloCavalo;
-    @FXML    private TableColumn<CavaloModel,String> tblCavaloEmpresa;
-    @FXML    private TableColumn<CavaloModel,String> tblCavaloFrota;
-    @FXML    private TableColumn<CavaloModel,String> tblCavaloMotorista;
+    @FXML    private Tab abaBob,abaCarretas,abaUser;
+    @FXML    private Button btbBobBusca,btccarredeleta;
+    @FXML    private Label lb2Capacidade,lb2Carreta,lb2Cavalo,lb2Destino,lb2Eixos,lb2Motorista,lb2frota;
+    @FXML    private Label lbCapacidade,lbCarrta,lbCavalo,lbDestino,lbEixo,lbMotorista,lbfrota;
+    @FXML    private Button btnAtualiza,btnBobAtualiza,btnBobDeleta,btnCarreBusca,btnCavaloAtualiza,btnCavaloDeleta,btnCavaloOk,btnDeleta,btnbusca,btncarreatualiza;
+    @FXML    private MenuItem menuBobs,menuCarretas,menuCavalos,menuSair,menuUsuarios;
+    @FXML    private TableColumn<Pessoa, String> tbUseUser,tbUserNome,tbUserSenha;
+    @FXML    private TableColumn<BobModel, String> tblBobfrota,tblBobPlca,tblBobTara,tblBobNomeMo;
+    @FXML    private TableColumn<CarretaModel, String> tblCarrFrota,tblCarrCarreta,tblCarrCavalo,tblCarrMotorista,tblCarrEixos,tblCarrDestino,tblCarrCapacidade; 
+    @FXML    private TableColumn<CavaloModel,String> tblCavaloCavalo,tblCavaloEmpresa,tblCavaloFrota,tblCavaloMotorista;
     @FXML    private TableView<CavaloModel> tbtCavaloCavalo;
     @FXML    private TextField txtCavaloBusca;   
     @FXML    private TableView<BobModel> tbtBob;
@@ -163,6 +136,7 @@ public class PrincipalController implements Initializable {
                
                selecionadac = (CarretaModel) newValue;
                System.out.println("selecionada");
+               detalheCarreta();
 
             }
 
@@ -326,6 +300,27 @@ public class PrincipalController implements Initializable {
             Alert alert = new Alert(AlertType.WARNING);
             alert.setHeaderText("Selecione uma Carreta");
             alert.showAndWait();
+        }
+    }
+    public void detalheCarreta(){
+        if (selecionadac != null) {
+            lb2frota.setText(selecionadac.getFrota());
+            lb2Carreta.setText(selecionadac.getCarreta());
+            lb2Cavalo.setText(selecionadac.getCavalo());
+            lb2Motorista.setText(selecionadac.getMotorista());
+            lb2Capacidade.setText(selecionadac.getCapacidade());
+            lb2Eixos.setText(selecionadac.getEixos());
+            lb2Destino.setText(selecionadac.getDestino());
+            
+        } else {
+            lb2frota.setText("");
+            lb2Carreta.setText("");
+            lb2Cavalo.setText("");
+            lb2Motorista.setText("");
+            lb2Capacidade.setText("");
+            lb2Eixos.setText("");
+            lb2Destino.setText("");
+            
         }
     }
     
